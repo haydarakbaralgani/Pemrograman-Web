@@ -1,0 +1,348 @@
+/* BUAT FILE selector_1.html */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+
+    <style>
+        /* Universal Selector */
+        * {
+            color: brown;
+            background-color: bisque;
+        }
+
+        /* Element Selector */
+        h2 {
+            color: black;
+        }        
+
+        /* Class Selector */
+        p.success {
+            color: green;
+        }
+
+        /* Id Selector */
+        p#danger {
+            color: red;
+        }
+
+        /* Attribute Selector */
+        a[href] {
+            font-size: 50px;
+        }
+
+        /* Group Selector */
+        h1, h2, p {
+            text-transform: uppercase;
+        }
+
+        /* Element Spesific Selector */
+        p.judul {
+            font-size: large;
+        }
+
+        span#important {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Descendant Selector */
+        div p {
+            font-size: x-large;
+        }
+
+        /* Child Selector */
+        div > p {
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Heading One</h1>
+    <p>This is paragraph One</p>
+
+    <hr>
+
+    <h2 class="judul">This is Heading Two</h2>
+    <p>This is paragraph Two</p>
+
+    <hr>
+
+    <h3>This is Heading Two</h3>
+    <p class="success">Proses Registrasi Berhasil</p>
+
+    <hr>
+
+    <h4>This is Heading Four</h4>
+    <p id="danger">Proses Registrasi Gagal</p>
+
+    <hr>
+
+    <a>Link Non Aktif</a>
+    <a href="https://is.ittelkom-sby.ac.id/" target="_blank">Klik di sini</a>
+
+    <hr>
+
+    <p class="judul">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut vel, <span id="important">dolor</span>, natus et quod perferendis voluptas nemo exercitationem perspiciatis necessitatibus velit sapiente minima. Pariatur consectetur veniam accusantium sit earum dolorem.</p>
+
+    <hr>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam magnam obcaecati minima ipsam corrupti totam quisquam iste explicabo in molestiae aperiam, sunt molestias dignissimos et praesentium facilis minus rem eveniet.</p>
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nobis, debitis nihil cupiditate, consequatur amet laudantium beatae totam placeat iure, laborum nostrum recusandae labore harum similique impedit eum sint ea.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto optio adipisci odio! Iusto natus temporibus laudantium quam placeat inventore voluptate minima sed quas. Hic quam aut odit. Animi, distinctio modi!</p>
+        </section>
+    </div>
+</body>
+</html>
+
+
+
+/* BUAT FILE selector_2.html */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+
+    <style>
+        a {
+            font-size: 50px;
+            text-decoration: none;
+        }
+
+        /* Dynamic Pseudo Class Selector */
+        a:hover {
+            color: cadetblue;
+            text-decoration: underline;
+        }
+
+        input {
+            width: 300px;
+            height: 30px;
+        }
+
+        /* Dynamic Pseudo Class Selector */
+        input:focus {
+            border: solid 2px orange;
+            outline: none;
+        }
+
+        /* State Pseudo Class Selector */
+        input:disabled {
+            border: solid 2px gray;
+        }
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: solid 1px black;
+            padding: 10px;
+        }
+
+/* Structural Pseudo Class Selector */
+        tr:first-child {
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        tr:last-child {
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: right;
+            color: red;
+        }
+
+        tr:nth-child(odd) {
+            background-color: lightgrey
+        }
+
+        tr:nth-child(even) {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://bif-sby.telkomuniversity.ac.id//">Informatika Telkom University Surabaya</a>
+
+    <p><input type="text"></p>
+    <p><input type="text" disabled value="Disabled"></p>
+
+    <table style="border: 1;">
+        <tr>
+            <td>Row</td>
+            <td>Row</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Row</td>
+            <td>Row</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Row</td>
+            <td>Row</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Row</td>
+            <td>Row</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Row</td>
+            <td>Row</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Row</td>
+            <td>Row</td>
+            <td>Row</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+
+/* BUAT FILE tugas_ selector.html */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Selector HTML</title>
+    <style>
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 0;
+            color: #333;
+        }
+
+        /* Element Selector */
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: #ffef96;
+        }
+
+        /* ID Selector */
+        #header {
+            font-size: 24px;
+            color: #444;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        /* Attribute Value Selector */
+        a[target="_blank"] {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #e74c3c;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        a[target="_blank"]:hover {
+            text-decoration: underline;
+        }
+
+        /* Adjacent Sibling Combinator */
+        h2 + p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">Header ini menggunakan Id Selector</div>
+    <p class="highlight">Ini adalah paragraf yang menggunakan class Selector.</p>
+    <p>Ini adalah paragraf yang menggunakan Element Selector.</p>
+    <a href="https://www.example.com" target="_blank">Ini adalah href yang menggunakan Value Selector</a>
+    <h2>Judul yang menggunakan Adjacent Sibling Combinator</h2>
+    <p>Paragraf pertama yang berdekatan dengan h2 (Adjacent Sibling Combinator), akan memiliki font tebal.</p>
+    <p>Paragraf kedua yang tidak berdekatan dengan h2 (Adjacent Sibling Combinator), tidak akan memiliki font tebal.</p>
+</body>
+</html>
+
+
+
+/* BUAT FILE tugas_ background.html */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tugas BG ijaz</title>
+<style>
+  /* CSS */
+  .background-warna {
+    background-color: #f0f0f0; /* Warna abu-abu muda */
+    color: #333; /* Warna teks gelap */
+    padding: 20px;
+  }
+
+  /* Background campuran */
+  .background-campuran {
+    background: linear-gradient(135deg, #ff9999, #66ccff); /* Gradien campuran warna */
+    color: #fff; /* Warna teks putih */
+    padding: 20px;
+  }
+
+  /* Background gambar */
+  .background-gambar {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("C:/IT TELKOM SBY/SMT 4/PEMROGRAMAN WEB/praktikum/assets/strawberries.jpg");
+    background-size: cover; 
+    color: black; 
+    padding: 20px;
+    height: 700px;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="background-warna">
+  <h2>Background Warna</h2>
+  <p>Ini adalah background berupa warna solid.</p>
+</div>
+
+<div class="background-campuran">
+  <h2>Background Campuran</h2>
+  <p>Ini adalah background campuran yang terdiri dari dua warna yang di-gradien-kan.</p>
+</div>
+
+<div class="background-gambar">
+  <h2>Background Gambar</h2>
+  <p>Ini adalah background yang menggunakan gambar sebagai latar belakang.</p>
+</div>
+
+</body>
+</html>
